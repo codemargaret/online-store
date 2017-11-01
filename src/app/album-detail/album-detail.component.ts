@@ -14,7 +14,7 @@ import { FirebaseObjectObservable } from 'angularfire2/database';
 
 export class AlbumDetailComponent implements OnInit {
   albumId: string;
-  albumToDisplay: any;
+  albumToDisplay;
 
   constructor(
     private route: ActivatedRoute,

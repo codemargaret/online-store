@@ -1,28 +1,60 @@
-# OnlineStore
+# Online Store
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
+#### _An application that allows a user to view information about albums, 11.01.2017_
 
-## Development server
+#### By _**Margaret Berry**_
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Description
+_This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0._
 
-## Code scaffolding
+## Project Goals
+* Practice generating an app using Angular CLI.
+* Practice using Firebase
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
+## Setup/Installation Requirements
+_Run the following commands in Terminal:_
 
-## Build
+1. `$ git clone` [this repository](https://github.com/codemargaret/online-store.git)
+2. `$ cd online-store`
+3. `$ npm install`
+4. `$ bower install`
+5. _Firebase setup:_
+  * _Go to [firebase](https://console.firebase.google.com) and login or create a free account._
+  * _Go to the firebase console and create a project called 'online-store'._
+  * _Click 'add firebase to your web app'._
+  * `$ touch src/app/api-keys.ts`
+  * _Add the following code and replace the x's with your information:_
+    - `export var masterFirebaseConfig = {
+      apiKey: "xxxx",
+      authDomain: "xxxx.firebaseapp.com",
+      databaseURL: "https://xxxx.firebaseio.com",
+      storageBucket: "xxxx.appspot.com",
+      messagingSenderId: "xxxx" };`
+  * _Add the following code to your .gitignore file:_
+    - `#Firebase credentials
+      /src/app/api-keys.ts`
+  * _Visit the Firebase console, click 'online-store,' and click the database option from the lefthand side of the menu._
+  * _Click 'Realtime Database,' then 'Rules.' Set the value of .read and .write to 'true' and click 'publish.'_
+  * _'Click 'Data,' then click the three dots in the upper righthand corner. Select 'Import JSON' and navigate to 'sample-posts.json' from this project._
+6. `$ ng serve`
+7. _Navigate to localhost:4200_
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+## Known Bugs
+_There are no known bugs at this time._
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
+## Support and contact details
+_If you have issues, questions, ideas, or concerns, please contact [Margaret](codeberry1@gmail.com). Feel free to make a contribution to the code._
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Technologies Used
+* _JavaScript_
+* _TypeScript_
+* _Node_
+* _Bower_
+* _Angular CLI_
+
+### License
+*This software is licensed under the MIT license.*
+
+Copyright (c) 2017 **_Margaret Berry_**
